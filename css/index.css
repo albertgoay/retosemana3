@@ -215,6 +215,10 @@
   grid-template-columns: 1fr;
 }
 
+.letra{
+  color: white;
+}
+
 .g-layout--center {
   align-items: center;
   justify-items: center;
@@ -228,6 +232,17 @@
   .g-layout--1-1-1 {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.circulo{
+  width: 120px;
+  height: 120px;
+
+  box-sizing: border-box;
+  background-clip: content-box;
+  border: 0px solid rgba(0,0,0,0);
+  border-radius: 49.9%;
+  margin-top: -20px;
 }
 
 .gap-xs {
@@ -273,13 +288,3 @@
 }
 
 
-.circulo{
-  width: 120px;
-  height: 120px;
-
-  box-sizing: border-box;
-  background-clip: content-box;
-  border: 0px solid rgba(0,0,0,0);
-  border-radius: 49.9%;
-  margin-top: -20px;
-}
