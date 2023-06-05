@@ -3,6 +3,7 @@
 @import './modules/layouts/flexbox.css';
 @import './modules/components/header.css';
 @import './modules/components/nav.css';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .body {
   margin: 0;
@@ -95,6 +96,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.heros {
+  min-height: 100vh;
+  
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--primary-spacing);
+  padding-bottom: var(--primary-spacing);
 }
 
 .hero::before {
@@ -310,6 +323,82 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.containers {
+
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.form .input-box {
+  width: 100%;
+  margin-top: 10px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box){
+  
+  
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #149eca;
+}
+.form button:hover {
+  background: #149eca;
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
 
 .circulo{
   width: 120px;
