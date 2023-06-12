@@ -1,6 +1,6 @@
 .hero {
     min-height: 100vh;
-    background-image: url('../../../img/fondo-codigoweb.jpg');
+    /* background-image: url('../../../img/fondo-codigoweb.jpg'); */
     background-size: cover;
     background-position: center;
     display: flex;

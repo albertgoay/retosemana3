@@ -3,14 +3,13 @@
   }
   
   .card__body {
-    background-color: #2b303b;
-    /* background-color: var(--white-color); */
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 0.75rem;
+    color: #707070;
   }
 
   .card__title {

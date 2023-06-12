@@ -4,6 +4,7 @@
   --primary-main-color: #149eca;
   --primary-background-color: white;
   --secondary-background-color: #16181d;
+  --tertiary-background-color:#0d1f46;
   --primary-text-color: white;
   --light-primary-shadow-color: rgba(0, 0, 0, 0.5);
   --dark-primary-shadow-color: rgba(255, 255, 255, 0.5);
@@ -14,6 +15,9 @@
   background: var(--secondary-background-color);
   ;
 }
+
+
+
 
 @media (min-width: 768px) {
   :root {
