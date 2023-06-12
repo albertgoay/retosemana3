@@ -1,0 +1,47 @@
+.hero {
+    min-height: 100vh;
+    background-image: url('../../../img/fondo-codigoweb.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+
+  /* .hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  } */
+
+  .hero::before {
+    content: '';
+  }
+
+  /* .hero::before,
+  .hero::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 75%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-main-color);
+  }
+  
+  .hero::before {
+    top: 0;
+    left: 100%;
+  }
+  
+  .hero::after {
+    top: 100%;
+    left: 0;
+  } */

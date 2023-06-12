@@ -1,0 +1,21 @@
+const faq = () => {
+    const questions = document.querySelectorAll('.questions__question');
+    questions.forEach(element => {
+        element.addEventListener('click', () => {
+            let height = 0;
+            let answer = element.nextElementSibling;
+            console.log(height);
+            console.log(answer);
+
+            if (answer.clientHeight === 0) {
+                height = answer.scrollHeight;
+            }
+            answer.classList.toggle('questions__answer--open');
+            answer.style.height = `${height}px`;
+            element.children[1].classList.toggle('questions__arrow--rotate-180');
+        });
+
+    })
+};
+
+export default faq;
